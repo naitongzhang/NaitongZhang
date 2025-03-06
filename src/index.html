@@ -2,20 +2,64 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Naitong Zhang's personal website">
-  <meta name="keywords" content="Naitong Zhang, personal website">
-  <meta name="author" content="Naitong Zhang">
-  <link rel="stylesheet" href="styles.css">
-  <title>Naitong Zhang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Knowledge sharing platform focusing on real estate, stocks, and cryptocurrency research">
+    <meta name="keywords" content="Real Estate Research, Stock Research, Cryptocurrency Research, Knowledge Sharing">
+    <meta name="author" content="Naitong Zhang">
+    <link rel="stylesheet" href="styles.css">
+    <title>Naitong Zhang - Real Estate | Stocks | Cryptocurrency</title>
 </head>
 
 <body>
-  <main>
-    <h1><a href="about/index.html">Naitong Zhang</a></h1>
-    you can find me on <a href="naitongzhang.notion.site">Notion</a> for now
-  </main>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="/real-estate.html" data-en="Real Estate Research" data-zh="房产研究">Real Estate Research</a></li>
+                <li><a href="/stocks.html" data-en="Stocks Research" data-zh="股票研究">Stocks Research</a></li>
+                <li><a href="/cryptocurrency.html" data-en="Cryptocurrency Research" data-zh="加密货币研究">Cryptocurrency Research</a></li>
+                <li><a href="about/index.html" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="/contact.html" data-en="Contact" data-zh="联系">Contact</a></li>
+                <li class="lang-switcher">
+                    <button data-lang="en" class="active">English</button>
+                    <button data-lang="zh">中文</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="homepage">
+            <h1 data-en="Welcome to Knowledge Sharing Platform" data-zh="欢迎来到知识分享平台">Welcome to Knowledge Sharing Platform</h1>
+            <p data-en="This site focuses on research and knowledge sharing in real estate, stocks, cryptocurrency and other fields. Here you can find the latest market analysis, industry trends and in-depth research reports."
+               data-zh="本站聚焦于房产、股票、加密货币等领域的研究与知识分享。在这里，您可以找到最新的市场分析、行业动态和深度研究报告。">This site focuses on research and knowledge sharing in real estate, stocks, cryptocurrency and other fields. Here you can find the latest market analysis, industry trends and in-depth research reports.</p>
+        </section>
+
+        <section id="real-estate" class="topic-section">
+            <h2 data-en="Real Estate Research" data-zh="房产研究"><a href="/real-estate.html" data-en="Real Estate Research" data-zh="房产研究">Real Estate Research</a></h2>
+            <p data-en="In-depth analysis of real estate market trends, policy interpretation, investment strategies to help you grasp real estate investment opportunities."
+               data-zh="深入分析房地产市场趋势、政策解读、投资策略，助您把握房产投资机会。">In-depth analysis of real estate market trends, policy interpretation, investment strategies to help you grasp real estate investment opportunities.</p>
+        </section>
+
+        <section id="stocks" class="topic-section">
+            <h2 data-en="Stocks Research" data-zh="股票研究"><a href="/stocks.html" data-en="Stocks Research" data-zh="股票研究">Stocks Research</a></h2>
+            <p data-en="Focus on stock market dynamics, company financial report analysis, investment portfolio construction, providing professional stock market research content."
+               data-zh="聚焦股市动态、公司财报分析、投资组合构建，提供专业的股票市场研究内容。">Focus on stock market dynamics, company financial report analysis, investment portfolio construction, providing professional stock market research content.</p>
+        </section>
+
+        <section id="cryptocurrency" class="topic-section">
+            <h2 data-en="Cryptocurrency Research" data-zh="加密货币研究"><a href="/cryptocurrency.html" data-en="Cryptocurrency Research" data-zh="加密货币研究">Cryptocurrency Research</a></h2>
+            <p data-en="Explore the frontier of cryptocurrency market, blockchain technology applications, DeFi and NFT and other hot topics, to present you a comprehensive cryptocurrency research."
+               data-zh="探索加密货币市场前沿、区块链技术应用、DeFi与NFT等热点话题，为您呈现全面的加密货币研究。">Explore the frontier of cryptocurrency market, blockchain technology applications, DeFi and NFT and other hot topics, to present you a comprehensive cryptocurrency research.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p data-en="&copy; 2025 Naitong Zhang. All rights reserved." data-zh="&copy; 2025 Naitong Zhang. 版权所有。">&copy; 2025 Naitong Zhang. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

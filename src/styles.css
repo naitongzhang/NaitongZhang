@@ -1,26 +1,82 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
   padding: 0;
-  background-color: #fff;
+  list-style: none;
+  text-align: center; /* Center navigation links */
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 main {
-  margin: auto;
-  width: 50%;
   padding: 20px;
+  max-width: 960px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+.topic-section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
 }
 
-a {
+.topic-section h2 a {
+  color: #333;
   text-decoration: none;
-  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Language Switcher Styles */
+.lang-switcher {
+  display: inline-block; /* Make it inline with other nav items */
+  margin-left: 2em; /* Add some space from other nav items */
+}
+
+.lang-switcher button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.lang-switcher button.active {
+  background-color: #fff;
+  color: #333;
 }
