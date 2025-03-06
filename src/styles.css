@@ -66,44 +66,25 @@ footer {
   margin-left: 2em; /* Add some space from other nav items */
 }
 
-.lang-switcher button {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+/* Style for the select dropdown */
+#google_translate_element select {
+  background-color: #333; /* Header background color */
+  color: #fff; /* Header text color */
+  border: none; /* Remove default border */
   padding: 0.5em 1em;
-  margin: 0 0.5em;
-  cursor: pointer;
   border-radius: 5px;
-}
-
-.lang-switcher button.active {
-  background-color: #fff;
-  color: #333;
-}
-
-/* Google Translate Button Styles */
-#google_translate_element {
-  text-align: center; /* Center the buttons */
-  margin-bottom: 20px; /* Add some space below the buttons */
-}
-
-#google_translate_element button {
-  background-color: transparent;
-  color: #333; /* Default text color */
-  border: 1px solid #333; /* Default border color */
-  padding: 0.5em 1em;
-  margin: 0 0.5em;
+  appearance: none; /* Remove default appearance for better styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Add dropdown arrow icon */
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  padding-right: 2em; /* Adjust padding to accommodate arrow icon */
 }
 
-#google_translate_element button:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-#google_translate_element button.active {
-  background-color: #333;
-  color: #fff;
+/* Style for dropdown options (optional, browser default styles usually work well) */
+#google_translate_element select option {
+  color: #333; /* Option text color */
 }
