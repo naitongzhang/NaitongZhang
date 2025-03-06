@@ -21,10 +21,7 @@
                 <li><a href="/cryptocurrency.html" data-en="Cryptocurrency Research" data-zh="加密货币研究">Cryptocurrency Research</a></li>
                 <li><a href="about/index.html" data-en="About" data-zh="关于">About</a></li>
                 <li><a href="/contact.html" data-en="Contact" data-zh="联系">Contact</a></li>
-                <li class="lang-switcher">
-                    <button data-lang="en" class="active">English</button>
-                    <button data-lang="zh">中文</button>
-                </li>
+
             </ul>
         </nav>
     </header>
@@ -54,6 +51,36 @@
                data-zh="探索加密货币市场前沿、区块链技术应用、DeFi与NFT等热点话题，为您呈现全面的加密货币研究。">Explore the frontier of cryptocurrency market, blockchain technology applications, DeFi and NFT and other hot topics, to present you a comprehensive cryptocurrency research.</p>
         </section>
     </main>
+
+    <div id="google_translate_element">
+        <button id="translate_en" data-lang="en">English</button>
+        <button id="translate_zh" data-lang="zh">中文</button>
+    </div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit(lang) { // 注意函数定义要和 script.js 中的一致
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,zh-CN',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false,
+            }, 'google_translate_element');
+
+            // 手动触发翻译 (确保只在初始化时执行一次，或者在语言切换时调用)
+            if (lang) { // 只有当 lang 参数存在时才尝试触发翻译
+                const googleTranslateFrame = document.querySelector('#google_translate_element iframe');
+                if (googleTranslateFrame) {
+                    const languageSelect = googleTranslateFrame.contentDocument.querySelector('select.goog-te-combo');
+                    if (languageSelect) {
+                        languageSelect.value = lang;
+                        languageSelect.dispatchEvent(new Event('change'));
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <footer>
         <p data-en="&copy; 2025 Naitong Zhang. All rights reserved." data-zh="&copy; 2025 Naitong Zhang. 版权所有。">&copy; 2025 Naitong Zhang. All rights reserved.</p>
