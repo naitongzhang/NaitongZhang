@@ -1,0 +1,83 @@
+/*
+COLOR PALETTE
+
+Dark green    #3c8453
+Sandy beige   #bcaa96
+Dark gray     #222222
+Light gray    #d3d4d6
+Off-white     #f6f6f6
+*/
+
+/* GLOBAL STYLES 
+------------------------------------*/
+body {
+  background: #f6f6f6; 
+}
+
+/* links */
+a {
+  color: #3c8453;
+}
+a:hover {
+  color: #bcaa96;
+  text-decoration: none;
+}
+footer a {
+  color: #bcaa96;
+}
+footer a:hover {
+  color: #3c8453;
+}
+.btn {
+  background: #3c8453;
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
+
+/* HOME
+------------------------------------*/
+.home {
+  background: url(../images/bg-home-office-studio.jpg) no-repeat;
+  background-size: cover;
+}
+.home .content-wrapper {
+  background: rgb(255 255 255 / 0.9);
+}
+
+
+/* RESUME
+------------------------------------*/
+
+/* Profile
+------------------------------------*/
+
+/* Projects
+------------------------------------*/
+
+/* Work Experience
+------------------------------------*/
+
+/* Education
+------------------------------------*/
+
+
+/* FOOTER
+------------------------------------*/
+footer {
+  background: #ffffff;
+  color: #000000;
+}
+
+.social-media {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
